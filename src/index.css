@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap")
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+}
+@layer components {
+  .greet {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .icon_css {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: 10px;
+    padding: 5px;
+    right: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 1rem;
+    -webkit-align-self: end;
+    -ms-flex-item-align: end;
+    align-self: end;
+  }
+  .scrollbar_css::-webkit-scrollbar {
+    display: none;
+  }
+  .hr_css {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: hr_css 3s infinite linear;
+  }
+  @keyframes hr_css {
+    0% {
+      background-position: -800px 0;
+    }
+    100% {
+      background-position: 8000 0;
+    }
+  }
+}
